@@ -15,9 +15,6 @@ def getImagesAndLabels(path):
     #now looping through all the image paths and loading the Ids and the images
     for imagePath in imagePaths:
 
-        # ignore if the file does not have jpg extension :
-        #if (os.path.split(imagePath)[-1].split("_")[-1]!='jpg'):
-         #   continue
 
         #loading the image and converting it to gray scale
         pilImage=Image.open(imagePath).convert('L')
